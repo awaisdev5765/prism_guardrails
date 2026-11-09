@@ -1,0 +1,23 @@
+name: ai_guardrails
+description: >-
+  The AI safety layer for Dart and Flutter. Detect prompt injection, redact
+  PII, catch leaked API keys, validate structured output and enforce token
+  budgets — provider-agnostic, pure Dart, zero dependencies.
+version: 0.1.0
+repository: https://github.com/awaisdev5765/ai_guardrails
+issue_tracker: https://github.com/awaisdev5765/ai_guardrails/issues
+homepage: https://github.com/awaisdev5765/ai_guardrails
+documentation: https://github.com/awaisdev5765/ai_guardrails
+topics:
+  - ai
+  - safety
+  - llm
+  - security
+  - validation
+
+environment:
+  sdk: ^3.5.0
+
+dev_dependencies:
+  lints: ^4.0.0
+  test: ^1.25.0
