@@ -3,7 +3,7 @@
 /// One import gives you the whole toolkit:
 ///
 /// ```dart
-/// import 'package:ai_guardrails/ai_guardrails.dart';
+/// import 'package:prism_guardrails/prism_guardrails.dart';
 ///
 /// final pipeline = GuardPipeline(
 ///   rules: [

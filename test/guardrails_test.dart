@@ -1,4 +1,4 @@
-import 'package:ai_guardrails/ai_guardrails.dart';
+import 'package:prism_guardrails/prism_guardrails.dart';
 import 'package:test/test.dart';
 
 void main() {

@@ -1,4 +1,4 @@
-# ai_guardrails
+# prism_guardrails
 
 The AI safety layer for Dart and Flutter.
 
@@ -12,7 +12,7 @@ pipeline, zero dependencies, pure Dart. Runs in Flutter apps, on servers with
 If your app sends user text to an LLM and shows the reply, you have three
 problems: users paste things they shouldn't (API keys, cards, PII), prompts
 get hijacked ("ignore all previous instructions"), and model output drifts
-from the JSON you asked for. `ai_guardrails` turns all three into a single,
+from the JSON you asked for. `prism_guardrails` turns all three into a single,
 auditable check on each side of the call.
 
 ```dart
@@ -112,17 +112,23 @@ TokenBudgetRule estimates ~4 characters per token (calibrate with
 tokensPerChar), rejects oversized requests, and enforces a rolling window you
 feed with spend() after each successful call.
 
+## The Prism ecosystem
+
+`prism_guardrails` pairs with [`prism_kit`](https://pub.dev/packages/prism_kit) —
+the UI side of a complete local-first, AI-ready app stack. Use the guardrails
+on every AI call, regardless of which provider client sends it.
+
 ## Why zero dependencies
 
 Guardrails sit in front of everything — your app, your server, your CLI.
 Every extra dependency is another audit surface for the component whose only
-job is to be trustworthy. ai_guardrails is pure Dart: no http, no platform
+job is to be trustworthy. prism_guardrails is pure Dart: no http, no platform
 channels, no transitive anything.
 
 ## Install
 
 ```bash
-dart pub add ai_guardrails
+dart pub add prism_guardrails
 ```
 
 ## Testing
